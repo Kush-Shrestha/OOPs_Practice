@@ -32,7 +32,7 @@ int main() {
 
     King.rollNo = 3;
     King.name = "King";
-    King.collegeName = "TEsting123 King";
+    King.collegeName = "King's University";
 
 
     // Displaying student details
