@@ -1,41 +1,73 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
-class Person{
-    public:
-    string name;
-    string address;
-    int phone_no;
-    Person(string name,string address, int phone_no){
-        this->name = name;
-        this->address = address;
-        this->phone_no = phone_no;
-    }
 
+class Person {
+public:
+  string name;
+  string address;
+  string phoneNo;
+  string email;
+  Person() { 
+    cout << "Default Contrutor" << endl;
+ }
+  Person(string name, string address, string phoneNo, string email) {
+    this->name = name;
+    this->address = address;
+    this->phoneNo = phoneNo;
+    this->email = email;
+  }
 };
-class Student: public Person{
-    public:
-    int roll_no;
-    string course;
-    float fee;
-    Student(int roll_no, string course, float fee, string name, string address, int phone_no): Person(name, address, phone_no){
-        this->roll_no = roll_no;
-        this->course = course;
-        this->fee = fee;
-    }   
-   
+
+class Student : public Person {
+public:
+
+  float fee;
+  float marks;
+  int rollno;
+
+  Student(string name, string address, string phoneNo, string email, float fee,
+          float marks, int rollno):Person(name, address, phoneNo, email)
+
+  {
+
+
+    this->fee = fee;
+    this->marks = marks;
+    this->rollno = rollno;
+  }
+
+  Student() : Person() { cout << "Student Constructor" << endl; }
 };
-class Teacher: public Person{
-    public:
-    string subject;
-    float salary;
-    Teacher(string subject, float salary, string name, string address, int phone_no): Person(name, address, phone_no){
-        this->subject = subject;
-        this->salary = salary;
-    }
+
+class Teacher : public Person {
+public:
+  float salary;
+  string subjectName;
+
+  Teacher(string name, string address, string phoneNo, string email,
+          float salary, string subjectName):Person(name, address, phoneNo, email)
+  {
+    this->salary = salary;
+    this->subjectName = subjectName;
+  }
+
+  Teacher() : Person() { 
+    cout << "Teacher Constructor" << endl;
+ }
 };
-Display
-int main(){
-    Student s1;
-    s1.name="Kush
+
+class Staff : public Person {
+public:
+  string department;
+  float salary;
+};
+
+int main() {
+
+  Student st;
+
+  Teacher t;
+
+  return 0;
 }
