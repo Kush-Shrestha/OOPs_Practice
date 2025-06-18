@@ -4,7 +4,7 @@ using namespace std;
 class Student {
 private:
     int rollNumber;
-
+    
 public:
     Student(int roll) {
         this->rollNumber = roll;
