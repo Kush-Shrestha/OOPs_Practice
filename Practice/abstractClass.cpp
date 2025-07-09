@@ -19,4 +19,5 @@ class purposal: public Connection{
     }
 };
 int main(){
+    
 }

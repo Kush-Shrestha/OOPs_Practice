@@ -8,7 +8,8 @@ class Student{
         string name;
     
     public:
-    Student(int rollno=0, string name=""){
+    Student(int rollno=0, string name="")
+    {
         this->rollno = rollno;
         this->name = name;
     }

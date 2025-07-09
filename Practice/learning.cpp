@@ -29,10 +29,10 @@ class Child: private Parent{
 public:
     void childShow()
     {
-        showVariable();
-////        cout<<"Private Var==>"<<privVar<<endl;
-//        cout<<"Protected Var==>"<<protVar<<endl;
-//        cout<<"Public Var==>"<<pubVar<<endl;
+        // showVariable();
+        // cout<<"Private Var==>"<<privVar<<endl;
+        // cout<<"Protected Var==>"<<protVar<<endl;
+        // cout<<"Public Var==>"<<pubVar<<endl;
     }
 
 };
@@ -42,7 +42,7 @@ class Child2: protected Child
 public:
     void showChild2()
     {
-        cout<<"Private Var==>"<<protVar<<endl;
+        // cout<<"Private Var==>"<<protVar<<endl;
 //        showVariable();
     }
 };

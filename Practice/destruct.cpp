@@ -2,7 +2,7 @@
 using namespace std;
 class Student {
     public:
-    static void display(){  
+    void display(){  
         cout << "Display function called" << endl;
     }
     Student(){
