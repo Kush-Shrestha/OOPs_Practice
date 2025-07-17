@@ -75,12 +75,12 @@ int divide(int a,int b)
 
 void throwMultipleException(int a)
 {
-    switch (a) {
-        case 1: throw 1;
+    switch (a) {  // here even we use switch case we dont use break statement because throw will exit the function
+        case 1: throw 1;// but we can use break statement as it is a good practice to use
         case 2: throw 1.1;
         case 3:throw "Character Exception";
         case 4: throw  MyException();
-        case  5: throw runtime_error("my runtime error");
+        case 5: throw runtime_error("my runtime error");
         default: throw AnotherException();
     }
 }
